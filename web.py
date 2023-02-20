@@ -40,7 +40,7 @@ def capData() :
             
             article_main_content_soup = soup.select("div#main-content")
 
-            
+            print(article_main_content_soup[0].text)
             article_comment_soup = soup.select("div.push")
 
 
