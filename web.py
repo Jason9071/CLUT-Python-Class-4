@@ -36,19 +36,12 @@ def capData() :
             soup = BeautifulSoup(r.text,"html.parser")
             
             article_meta_vlaue_soup = soup.select("span.article-meta-value")
-
-            
             article_main_content_soup = soup.select("div#main-content")
-
-            print(article_main_content_soup[0].text)
             article_comment_soup = soup.select("div.push")
-
-
             
             start = 0
             end = article_main_content_soup[0].text.find("--\n※ 發信站")
 
-            
             content = article_main_content_soup[0].text[start:end]
 
             n = 0 
